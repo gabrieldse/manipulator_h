@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<robot name="manipulator_h" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find manipulator_h_description)/urdf/manipulator_h.xacro" />
+
+  <link name="world"/>
+
+  <xacro:manipulator_h parent="world" prefix="arm">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </xacro:manipulator_h>
+
+</robot>
